@@ -1,0 +1,16 @@
+general:
+  build_dir: style.stitchfix.com
+
+machine:
+  node:
+    version: 4.4.5
+
+dependencies:
+  pre:
+    - npm install ./parent/
+
+test:
+  pre:
+    - npm install -g karma-cli
+  override:
+    - npm test
