@@ -24,7 +24,7 @@ module.exports = function(config) {
     'js/validate.11.js',
     'test/global.js',
     'test/validation.spec.js',
-    'test/test.spec.js',
+    'test/abanalytics.spec.js',
     ],
 
 
