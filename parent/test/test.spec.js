@@ -155,8 +155,8 @@ describe("Check getQueryParams function work flow", function () {
 });
 describe("Fire ABalytics.generateToken get results", function () {
 
-	it('Call ABalytics.generateToken success', function (done) {
-			var post = sinon.stub($, 'ajax');
+	it('Call ABalytics.generateToken success', function (done) {            
+		var post = sinon.stub($, 'ajax');
 	    	post.yieldsTo('success', [{"status":true,"message":"Already saved!","amp_id":"68ba126472fa2d9a8bb75a848dbd29cd"}]);
 			ABalytics.generateToken();            
             expect(post.called).to.equal(true);

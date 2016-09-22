@@ -19,8 +19,12 @@ module.exports = function(config) {
     'js/jquery2.1.0.js',
     'js/mobile-detect.min.js',
     'js/abanalytics.36.js',
-    'test/global.js',   
-    'test/*.spec.js'
+    'test/validateForms.js',
+    "js/bootstrap.min.js",
+    'js/validate.11.js',
+    'test/global.js',
+    'test/validation.spec.js',
+    'test/test.spec.js',
     ],
 
 
@@ -33,6 +37,7 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
         'js/abanalytics.36.js': 'coverage',
+        'js/validate.11.js': 'coverage',
         'test/*.html': ['html2js']
     },
 
