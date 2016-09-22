@@ -8,9 +8,9 @@ machine:
 dependencies:
   pre:
     - npm install
+    - npm install -g karma-cli
 
 test:
-  pre:
-    - npm install -g karma-cli
+  commands: 1200
   override:
     - npm test
