@@ -1,5 +1,5 @@
 general:
-  build_dir: style.stitchfix.com
+  build_dir: parent
 
 machine:
   node:
