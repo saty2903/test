@@ -424,3 +424,7 @@ sizecharts +='<legend>Currently we are only able to style XS&thinsp;&ndash;&thin
 sizecharts +='</section>';
 sizecharts +='</div>';
 sizecharts +='</div>';
+
+
+var showsm = '<div class="show-sm image-3"></div><div class="carousel-inner"></div><section class="copy"></section>';
+var horizontal = '<div class="horizontal bg-sizing image-1"></div>';
