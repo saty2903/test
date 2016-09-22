@@ -23,6 +23,7 @@ module.exports = function(config) {
     "js/bootstrap.min.js",
     'js/validate.11.js',
     'test/global.js',
+    'test/validation.spec.js',
     'test/abanalytics.spec.js',
     ],
 

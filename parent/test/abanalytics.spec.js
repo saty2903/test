@@ -78,38 +78,7 @@
             expect(testConfig.f).to.have.deep.property('variant_id', 5)
         });
 
- 		 it("All Anchor tags containg utm_content", function () {
-            $('a[href*=".stitchfix.com"]').each(function () {            	
-                var testParam;
-                var testAllowedParams = ["utm_source", "utm_medium", "utm_campaign", "utm_content"];                
-                var samepage = $(this).attr("href").indexOf('style.stitchfix.com/qa.html');
-                var isStyle = $(this).attr("href").indexOf('style.stitchfix.com/gifts');
-                if(samepage === -1){
-                    for (var x in testAllowedParams) { 
-                        if(isStyle !== -1){
-                        	console.log("utmID");
-                        	console.log(utmID);
-                        	console.log(testAllowedParams[x])
-                            if( testAllowedParams[x] == 'utm_campaign'){
-                                testParam = testAllowedParams[x] + '=' + utmID;    
-                            }else{
-                                testParam = testAllowedParams[x] + '=' + $.QueryString[testAllowedParams[x]];    
-                            }
-                            var testAnchor = $(this).attr("href").indexOf(testParam);
-                            
-                            console.log(testParam);
-                        }else{
-                            testParam = testAllowedParams[x] + '=' + $.QueryString[testAllowedParams[x]]; 
-                            var testAnchor = $(this).attr("href").indexOf(testParam);    
-                        }
-                        if(testAnchor===-1){
-                            console.log(this);
-                        }
-                        expect(testAnchor).to.be.above(-1);
-                    } 
-                }
-            });
-        });
+ 	
  	});
 
 describe("Check getQueryParams function work flow", function () {
