@@ -7,10 +7,8 @@ machine:
 
 dependencies:
   pre:
-    - npm install
     - npm install -g karma-cli
 
 test:
-  commands: 1200
   override:
-    - npm test
+    - karma start karma.conf.js --single-run
