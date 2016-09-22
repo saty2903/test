@@ -53,10 +53,6 @@ function check_uniqueness(item, frmSelector) {
             }
         }
     });
-    cu.fail(function (jqXHR, textStatus) {
-        setErrMsg(selector, 'Server Error');
-    });
-
 }
 
 function getErrTag(msg) {
