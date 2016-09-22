@@ -7,7 +7,7 @@ machine:
 
 dependencies:
   pre:
-    - npm install ./parent/
+    - npm install
 
 test:
   pre:
